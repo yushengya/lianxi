@@ -1,3 +1,1 @@
-<?php 
- echo "HelloWord";
- ?>
+echo:'¿Ó≥Ø—Ù «…µ±∆'£ª
