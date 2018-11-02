@@ -1,0 +1,2 @@
+ git remote rm origin删除原有的提交地址
+ git remote add origin 后面在家提交地址
