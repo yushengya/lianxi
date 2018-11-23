@@ -1,0 +1,93 @@
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="../wether/highcharts.js"></script>
+	<script src="https://img.hcharts.cn/highcharts/highcharts-more.js"></script>
+	<!-- https://img.hcharts.cn/highcharts/highcharts-more.js -->
+</head>
+<body>
+	<p>地址：<input type="text" id="city"></p>
+	<div id="container" style="height:300px;width:500px"></div>
+</body>
+</html>
+<script src="../duanxin/jq.min.js"></script>
+<script>
+	$("#city").on("blur",function(){
+		var city=$("#city").val();
+		if (city==''||$.trim(city).length==0) {
+			alert("不能为空");
+			return false;
+		}
+		if (city.length>30) {
+			alert("文本值长度不能大于30字符");
+			return false;
+		}
+		/*reg=/^$/;
+		if () {
+			alert("验证文本值必须为数字/字母/汉字");
+		};*/
+		$.ajax({
+			url:"wether.php",
+			type:"get",
+			data:{city:city},
+			dataType:"json",
+			success:function(e){
+				//console.log(e);
+				var date=[];
+				var res=[];
+				for (var i =0;i<e.length;i++) {
+					date.push(e[i]['date']);
+					max=e[i]['tmp_max'];
+					//console.log(max);
+					min=e[i]['tmp_min'];
+					arr=[max,min];
+					arrs=arr.map(Number);
+					//console.log(arrs);
+					res.push(arrs);
+				};
+				showWether(date,res);
+			}
+		})
+	})
+	function showWether(date,res){
+		var chart = Highcharts.chart('container', {
+	chart: {
+		type: 'columnrange', // columnrange 依赖 highcharts-more.js
+		inverted: true
+	},
+	title: {
+		text: '温度变化范围'
+	},
+	xAxis: {
+		categories: date
+	},
+	yAxis: {
+		title: {
+			text: '温度 ( °C )'
+		}
+	},
+	tooltip: {
+		valueSuffix: '°C'
+	},
+	plotOptions: {
+		columnrange: {
+			dataLabels: {
+				enabled: true,
+				formatter: function () {
+					return this.y + '°C';
+				}
+			}
+		}
+	},
+	legend: {
+		enabled: false
+	},
+	series: [{
+		name: '温度',
+		data: res
+	}]
+});
+	}
+</script>
