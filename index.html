@@ -3,30 +3,28 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		#f1{
+			height: 200px;
+			width:200px;
+			background-color: red;
+			margin-left: 10px;
+			border: 3px solid black;
+			border-radius:100px;
+			box-shadow: -10px 13px 20px green;
+		}
+		h1{
+			text-shadow: 10px 10px 5px green;
+		}
+	</style>
 </head>
 <body>
-<center>
-<form action="index.php" method="get">
-	<table>
-		<tr>
-			<td>用户名：</td>
-			<td><input type="text" name="name"></td>
-		</tr>
-		<tr>
-			<td>密码：</td>
-			<td><input type="password" name="pass"></td>
-		</tr>
-		<tr>
-			<td><input type="submit" value="提交"></td>
-			<td><img src="upload/qq.png" height="24" width="63" onclick="login()"></td>
-		</tr>
-	</table>
-</form>
-</center>
+	<video src="123.mp4" controls width='400px' height='300px'></video>
+	<audio src="xingfu.mp3" controls width='400px' height='300px'></audio>
+
+	<div id="f1">
+		
+	</div>
+	<h1>123</h1>
 </body>
 </html>
-<script>
-	function login(){
-		location.href="index.php/login";
-	}
-</script>
