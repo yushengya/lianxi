@@ -3,28 +3,201 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<script src="bootstrap/js/jq.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 	<style>
-		#f1{
-			height: 200px;
-			width:200px;
-			background-color: red;
-			margin-left: 10px;
-			border: 3px solid black;
-			border-radius:100px;
-			box-shadow: -10px 13px 20px green;
-		}
-		h1{
-			text-shadow: 10px 10px 5px green;
-		}
+	.a{
+		margin-top: -15px;
+	}
+	.a2{
+		margin-left: 145px;
+	}
+	#a3{
+		margin-top: 8px;
+		float: left;
+	}
+	#a4{
+		margin-top: 8px;
+		float: right;
+		width: 180px;
+	}
+	.a5{
+		margin-top: 12px;
+		float: left;
+		color: grey;
+	}
+	#a8{
+		margin-top: 26px;
+	}
+	.a6{
+		margin-top: 12px;
+		float: right;
+	}
+	.s8 li{
+		margin-left: -44px;
+		font-size: 14px;
+		margin-top: 12px;
+	}
+	.a7{
+		margin-top: 15px;
+		font-size: 16px;
+		color: orange;
+	}
+	a{
+		color:black;
+	}
+	.d2{
+		float: left;
+	}
+	.pa{
+		float: right;
+
+	}
 	</style>
 </head>
 <body>
-	<video src="123.mp4" controls width='400px' height='300px'></video>
-	<audio src="xingfu.mp3" controls width='400px' height='300px'></audio>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="head.png" height="50" width="110" class="a"></a>
+    </div>
 
-	<div id="f1">
-		
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">新闻 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">大片</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">电视剧 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">爱情片</a></li>
+            <li><a href="#">动作片</a></li>
+            <li><a href="#">喜剧片</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-success">搜索</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 注册</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">qq</a></li>
+            <li><a href="#">微信</a></li>
+            <li><a href="#">微博</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<img src="zhong.png" height="500" width="1250" align="center" class="a2">
+<br>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<h3>要闻</h3>
+			<span style="font-size:17px">光明日报：从习近平的“四个讲清楚”看文化自信</span>
+			<div id="a3">
+				<img src="a1.png" alt="" height="180" width="170">
+			</div>
+			<div id="a4">
+				 <span>2013年8月，习近平总书记在全国宣传思想工作会议上提出“四个讲清楚”的重要论断。同年11月，习近平总书记在山东考察期间强调，一个国家、一个民族的强盛，总是以文化兴盛为…</span>
+				
+				<br><br><br><span>2018-11-28</span>
+			</div>
+			<div class="a5" id="a8">
+				<span style="font-size:14px">观点 ▏ </span>
+			</div>
+			<div class="a6">
+				<span style="font-size:14px">广电总局：文艺作品的主角应更多是群众而非明星</span>
+			</div>
+			<div class="a5">
+				<span style="font-size:14px">观点 ▏ </span>
+			</div>
+			<div class="a6">
+				<span style="font-size:14px">广电总局：文艺作品的主角应更多是群众而非明星</span>
+			</div>
+			<div class="a5">
+				<span style="font-size:14px">观点 ▏ </span>
+			</div>
+			<div class="a6">
+				<span style="font-size:14px">广电总局：文艺作品的主角应更多是群众而非明星</span>
+			</div>
+			<div class="a5">
+				<span style="font-size:14px">观点 ▏ </span>
+			</div>
+			<div class="a6">
+				<span style="font-size:14px">广电总局：文艺作品的主角应更多是群众而非明星</span>
+			</div>
+			<div class="a5">
+				<span style="font-size:14px">观点 ▏ </span>
+			</div>
+			<div class="a6">
+				<span style="font-size:14px">广电总局：文艺作品的主角应更多是群众而非明星</span>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<h3>快讯</h3>
+			<span class="a7">《中国合伙人2》曝预告 群雄并起筑梦中国互联网</span>
+			<ul class="s8">
+				<li><a href="">猪猪女孩看过来！《小猪佩奇过大年》首曝“行大运”海报</a></li>
+				<li><a href="">黄渤为平凡人发声！献唱纪录电影《一百年很长吗》主题曲</a></li>
+				<li><a href="">张天爱配音《蜘蛛侠：平行宇宙》 变身“女蜘蛛侠”格温</a></li>
+			</ul>
+			<span class="a7">《中国合伙人2》曝预告 群雄并起筑梦中国互联网</span>
+			<ul class="s8">
+				<li><a href="">猪猪女孩看过来！《小猪佩奇过大年》首曝“行大运”海报</a></li>
+				<li><a href="">黄渤为平凡人发声！献唱纪录电影《一百年很长吗》主题曲</a></li>
+				<li><a href="">张天爱配音《蜘蛛侠：平行宇宙》 变身“女蜘蛛侠”格温</a></li>
+			</ul>
+			<span class="a7">《中国合伙人2》曝预告 群雄并起筑梦中国互联网</span>
+			<ul class="s8">
+				<li><a href="">猪猪女孩看过来！《小猪佩奇过大年》首曝“行大运”海报</a></li>
+				<li><a href="">黄渤为平凡人发声！献唱纪录电影《一百年很长吗》主题曲</a></li>
+				<li><a href="">张天爱配音《蜘蛛侠：平行宇宙》 变身“女蜘蛛侠”格温</a></li>
+			</ul>
+		</div>
+		<div class="col-md-3">
+			<h3>深度</h3>
+				<div style="width:437px;height:110px">
+				<div style="width:160px;height:96px;float:left">
+					<img src="right0.png" height="96" width="160" alt="">
+				</div>
+				<div style="margin-left:10px">
+					<a href="#" style="color:black;text-decoration: none">他走了！却为中国拍了经典名作</a>
+					<h6 style="line-height:20px">这个冬天多少有些过于哀愁，在过去的日子中，我们送走了一位又一位的电影人</h6>
+				</div>
+			</div>
+			<hr style="margin-top:-4px">
+			<div style="width:437px;height:110px;margin-top:-7px">
+				<div style="width:160px;height:96px;float:left">
+					<img src="right0.png" height="96" width="160" alt="">
+				</div>
+				<div style="margin-left:10px">
+					<a href="#" style="color:black;text-decoration: none">这种宣传就是“炸骗”</a>
+					<h6 style="line-height:20px">除了“国内首部”“亚洲首创”这一类头衔，还有几种国产片的宣传文案，看到赶紧绕道！它们绝对涉嫌“诈骗”。</h6>
+				</div>
+			</div>
+			<hr style="margin-top:-4px">
+			<img src="right0.png" height="100" width="442" alt="" style="margin-top:-4px">
+		</div>
 	</div>
-	<h1>123</h1>
+</div>
 </body>
-</html>
+</html
